@@ -5,7 +5,7 @@ import img_1 from "../assets/img-1.jpg";
 
 const Invitation = () => {
   return (
-    <Box mt={20}  bgGradient='linear(to-b, blue.500, blue.600)'>
+    <Box mt={20} p={10}  bgGradient='linear(to-b, blue.500, blue.600)'>
       <Wrap
         spacing={"1em"}
         justify={"center"}
@@ -57,11 +57,10 @@ const Invitation = () => {
           <WrapItem my={"2"}>
             <motion.div
             initial={{borderRadius: '0px'}}
-            whileHover={{borderRadius: '10px'}}
             transition={{duration: 0.5}}
             >
             <Image
-            borderRadius={'inherit'}
+            borderRadius={'xl'}
               src={img_1}
               height={"350px"}
               />

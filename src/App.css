@@ -42,17 +42,14 @@
 .dot-bg {
   background-image: radial-gradient(circle, #818181 1px, transparent 2px);
   background-size: 50px 50px; /* Adjust the size of the dots */
-  height: 130vh;
+  height: 100vh;
   background-position: 0 0; /* Start position of the background */
 }
 
 .bg {
-  background: url(assets/hero-bg.jpg) no-repeat center center;
+  background: url(bg-3.jpg) no-repeat center center;
   object-fit: fill;
-    filter: brightness(70%);
-  height: 100%;
 }
-
 
 @media only screen and (max-width: 768px) {
   .custom-cursor {

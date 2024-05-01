@@ -1,16 +1,6 @@
 import { Box, Center, HStack, Tag, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-
-const events = [
-  "Runway revolution",
-  "El Dorado",
-  "Inventing Nextgen",
-  "Duetto Tunes",
-  "Cinematic Serenity",
-  "Tatto Odyssey",
-  "Brand War",
-  "Atomized Paintings",
-];
+import events from "../events";
 const randomColor = () => {
   let colors = ["red", "orange", "yellow", "green", "blue", "purple"];
   return colors[Math.floor(Math.random() * colors.length)];
@@ -20,8 +10,8 @@ const Hero = () => {
     <Box mb={"25em"} pt={"2em"}>
       <Center pos={"relative"}>
         <motion.div
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
         >
           <Text
             fontSize={["3em", "5em", "8em", "10em"]}
@@ -59,7 +49,7 @@ const Hero = () => {
                 whileTap={{ scale: 0.9 }}
               >
                 <Tag key={event} colorScheme={randomColor()} size={"lg"}>
-                  {event}
+                  {event.name}
                 </Tag>
               </motion.div>
             </motion.div>

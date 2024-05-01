@@ -8,7 +8,7 @@ const baseStyle = definePartsStyle({
   container: {
     border: "1px solid #DCDCDC",
     _dark: {
-      background: "#070707",
+      background: "#071220",
       border: "1px solid #232323",
     },
   },

@@ -37,9 +37,8 @@ function Navbar() {
         <Spacer />
         <ButtonGroup variant={"ghost"} hideBelow={"md"}>
           <a href="#invitation"><Button>Invitation</Button></a>
-          <Button>Coordinators</Button>
-          <Button>Events</Button>
-          <Button>Registration</Button>
+          <a href="#coordinators"><Button>Coordinators</Button></a>
+          <a href="#events"><Button>Events</Button></a>
         </ButtonGroup>
         <Toggle />
       </Flex>

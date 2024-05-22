@@ -40,7 +40,7 @@
 }
 
 .dot-bg {
-  background-image: radial-gradient(circle, #818181 1px, transparent 2px);
+  /* background-image: radial-gradient(circle, #818181 1px, transparent 2px); */
   background-size: 50px 50px; /* Adjust the size of the dots */
   height: 100vh;
   background-position: 0 0; /* Start position of the background */

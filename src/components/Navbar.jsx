@@ -5,7 +5,6 @@ import {
   ButtonGroup,
   Flex,
   Heading,
-  Spacer,
 } from "@chakra-ui/react";
 import Toggle from "./Toggle";
 import logo from "../assets/logo.png";
@@ -21,24 +20,17 @@ function Navbar() {
       boxSize={"full"}
       pos={"relative"}
       background={"transparent"}
-      _dark={{
-        boxShadow: "0px 0px 0px 1px #141414",
-      }}
-      _light={{
-        boxShadow: "0px 0px 0px 1px #efefef",
-      }}
     >
-      <Flex minWidth={"max-content"} alignItems={"center"}>
+      <Flex minWidth={"max-content"} alignItems={"center"} justifyContent={'space-between'}>
         <Heading>
-          <Flex>
+          <Flex color={'white'}>
             <img src={logo} width={40} height={10} /> - Genesis
           </Flex>
         </Heading>
-        <Spacer />
-        <ButtonGroup variant={"ghost"} hideBelow={"md"}>
-          <a href="#invitation"><Button>Invitation</Button></a>
-          <a href="#coordinators"><Button>Coordinators</Button></a>
-          <a href="#events"><Button>Events</Button></a>
+        <ButtonGroup variant={"link"} spacing={'6em'} hideBelow={"md"}>
+          <a href="#invitation"><Button color={'white'} _hover={{textDecor: 'none'}}>Invitation</Button></a>
+          <a href="#coordinators"><Button color={'white'} _hover={{textDecor: 'none'}}>Coordinators</Button></a>
+          <a href="#events"><Button color={'white'} _hover={{textDecor: 'none'}}>Events</Button></a>
         </ButtonGroup>
         <Toggle />
       </Flex>

@@ -5,7 +5,12 @@ import img_1 from "../assets/img-1.jpg";
 
 const Invitation = () => {
   return (
-    <Box mt={20} p={10}  bgGradient='linear(to-b, blue.500, blue.600)'>
+    <Box
+      mt={20}
+      p={10}
+      _light={{ bgGradient: "linear(to-b, #f0fff1, white)" }}
+      overflowX={"hidden"}
+    >
       <Wrap
         spacing={"1em"}
         justify={"center"}
@@ -15,18 +20,18 @@ const Invitation = () => {
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, type:"spring" }}
+          transition={{ duration: 0.5, type: "spring" }}
           viewport={{ once: true }}
         >
           <WrapItem px={["2", "1em"]} py={"6"}>
             <div>
-              <Heading color={'white'}>
+              <Heading>
                 <Wrap>
                   <FaQuoteLeft />
                   <span>Invitation from our principal.</span>
                 </Wrap>
               </Heading>
-              <Text color={'white'}>
+              <Text>
                 Vig English school, Chhota govindpur is organising the 2nd
                 <br />
                 V-Genesis this year on 18th August 2023 to bring together young
@@ -51,20 +56,16 @@ const Invitation = () => {
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, type:"spring" }}
+          transition={{ duration: 0.5, type: "spring" }}
           viewport={{ once: true }}
         >
           <WrapItem my={"2"}>
             <motion.div
-            initial={{borderRadius: '0px'}}
-            transition={{duration: 0.5}}
+              initial={{ borderRadius: "0px" }}
+              transition={{ duration: 0.5 }}
             >
-            <Image
-            borderRadius={'xl'}
-              src={img_1}
-              height={"350px"}
-              />
-              </motion.div>
+              <Image borderRadius={"xl"} src={img_1} height={"350px"} />
+            </motion.div>
           </WrapItem>
         </motion.div>
       </Wrap>

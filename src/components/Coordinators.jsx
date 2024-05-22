@@ -52,11 +52,13 @@ const Coordinators = () => {
   ];
 
   return (
-    <div>
-      <Center my={6} id="coordinators">
+    <Box
+     
+     >
+      <Center py={6} id="coordinators">
         <Heading>Our Coordinators</Heading>
       </Center>
-      <SimpleGrid columns={[1, 2, 2, 3]} px={[0, 0, 0, 0, "10em"]} gap={6} m={3}>
+      <SimpleGrid columns={[1, 2, 2, 3]} px={[0, 0, 0, 0, "10em"]} gap={6} p={3}>
         {coordinators.map((coordinator, index) => (
           <motion.div
             key={index}
@@ -65,8 +67,8 @@ const Coordinators = () => {
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <motion.div initial={{ rotate: 0, scale: 1 }}>
-              <Card rounded={"xl"} h={'15em'}>
-                <CardBody my={3} textAlign={"center"} justifyContent={'center'}>
+              <Card rounded={"xl"} h={'15em'} boxShadow={'1px 1px 2px yellow.600'}>
+                <CardBody py={3} textAlign={"center"} justifyContent={'center'}>
                   <AbsoluteCenter>
 
                   <Avatar
@@ -87,7 +89,7 @@ const Coordinators = () => {
           </motion.div>
         ))}
       </SimpleGrid>
-    </div>
+    </Box>
   );
 };
 

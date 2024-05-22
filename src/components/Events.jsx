@@ -16,9 +16,10 @@ import events from "../events";
 
 const Events = () => {
   return (
-    <>
+    <Box
+    >
       <Center id="events">
-        <Heading my={6}>Events</Heading>
+        <Heading py={6}>Events</Heading>
       </Center>
       <SimpleGrid
         columns={[1, 2, 2, 3]}
@@ -52,7 +53,7 @@ const Events = () => {
         <Button colorScheme="yellow">Download Event Bronchure</Button>
       </Center>
       <br />
-    </>
+    </Box>
   );
 };
 
